@@ -3,70 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <style>
-        h3 {
-            margin-bottom: -50px;
+
+        body {
+            font-family: 'Sofia';
+            margin-left: -8px;
+            margin-right: -9px;
+            text-align: center;
         }
+
+        nav {
+            width: 100%;
+            /*margin-left: -8px;*/
+            margin-top: -8px;
+            position: fixed;
+            background-color: floralwhite;
+            text-align: right;
+            padding: 8px;
+            font-size: 18px;
+
+
+        }
+        a {
+            color: black;
+
+        }
+        .links {
+            text-decoration: none;
+            padding: 20px;
+
+
+        }
+        #contact-link {
+            margin-right: 30px;
+
+        }
+        main {
+            padding-top: 22px;
+        }
+        #welcome-section {
+            /*text-align: center;*/
+            padding-top: 10%;
+            padding-bottom: 10%;
+            color: black;
+            background-color: #FEDCD2;
+        }
+        h2 {
+            padding-bottom: 20px;
+            margin-bottom: -30px;
+        }
+
+        #work {
+            text-align: center;
+            padding-top: 40px;
+            /*background-color: #DCB239;*/
+            /*background-color: #BFD8D2;*/
+        }
+
         .images {
             height: 50%;
             width: 100%;
         }
 
         .project-tile {
+            height: 300px;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
-            padding-top: 70px;
+            margin-top: 50px;
+            /*padding-top: 70px;*/
 
         }
 
         .column {
-            text-align: center;
+            /*text-align: center;*/
             width: 25%;
             padding: 8px;
-            height: 100px;
+
         }
 
         .card {
-
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 5px;
+            font-size: 20px;
             background-color: ghostwhite;
 
         }
+        h5 {
+            margin: 10px;
+        }
+        #contact {
+            background-color: #BFD8D2;
+        }
+        h3 {
+            padding-top: 20px;
+        }
 
         .button {
-            background-color: #4CAF50;
+            background-color: #DF744A;
+            font-family: 'Sofia';
             border: none;
-            color: white;
+            /*color: white;*/
             padding: 20px;
             text-align: center;
-            text-decoration: none;
+            /*text-decoration: none;*/
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
+            margin: 20px 5px;
+
         }
 
         #button1, #button2, #button3, #button4 {
             border-radius: 12px;
         }
 
+        @media screen and (max-width: 600px) {
+            .project-tile {
+                display: flex;
+                justify-content: center;
+                height: 50%;
+            }
+            .card {
+                margin-top: -10px;
+            }
+        }
+
     </style>
 </head>
 <body>
-<nav>
-    <a href="#welcome-section">About</a>
-    <a href="#work">Work</a>
-    <a href="#contact">Contact</a>
+<div>
+<nav id="navbar">
+    <a href="#welcome-section" class="links">About</a>
+    <a href="#work" class="links">Work</a>
+    <a href="#contact" class="links" id="contact-link">Contact</a>
 </nav>
+</div>
+<main>
 <div id="welcome-section">
     <h1>Hi I am Nora Reguig</h1>
     <p>I am a web developer and this is my portfolio!</p>
 </div>
-<main>
+
 
     <div id="work">
-    <h3>These are some of my projects</h3>
+    <h2>These are some of my projects</h2>
     <div id="projects">
 
         <div class="project-tile">
@@ -114,9 +195,9 @@
     </div>
     <div id="contact">
         <div>
-            <h4>I would love to work with you... Contact me below</h4>
+            <h3>I would love to work with you... Contact me below</h3>
         </div>
-        <a href="https://github.com/8bit-cutie" target="_blank"><button class="button" id="button1">GitHub</button></a>
+        <a href="https://github.com/8bit-cutie" target="_blank" id="profile-link"><button class="button" id="button1">GitHub</button></a>
         <a href="https://www.linkedin.com/in/nora-reguig" target="_blank"><button class="button" id="button2">LinkedIn</button></a>
         <a href="mailto:sarareguig@gmail.com"><button class="button" id="button3">E-mail</button></a>
         <a href="tel:+9178601047"><button class="button" id="button4">Call</button></a>
