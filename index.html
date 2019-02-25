@@ -4,55 +4,69 @@
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <style>
 
-        body {
-            font-family: 'Sofia';
-            margin-left: -8px;
-            margin-right: -9px;
+        html, body {
+            font-family: 'Sofia', sans-serif;
+            /*margin-left: -8px;*/
+            /*margin-right: -9px;*/
             text-align: center;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
         }
 
         nav {
             width: 100%;
-            /*margin-left: -8px;*/
-            margin-top: -8px;
+            /*margin-top: -8px;*/
             position: fixed;
             background-color: floralwhite;
             text-align: right;
-            padding: 8px;
+            padding: 13px;
             font-size: 18px;
 
-
         }
+
         a {
             color: black;
 
         }
+
+        a:hover {
+            color: #DF744A;
+        }
+
         .links {
             text-decoration: none;
             padding: 20px;
-
-
         }
+
         #contact-link {
             margin-right: 30px;
+        }
 
-        }
         main {
-            padding-top: 22px;
+            padding-top: 40px;
         }
+        h1 {
+            font-size: 35px;
+        }
+
         #welcome-section {
-            /*text-align: center;*/
             padding-top: 10%;
             padding-bottom: 10%;
             color: black;
             background-color: #FEDCD2;
+            font-size: 18px;
+
         }
+
         h2 {
             padding-bottom: 20px;
             margin-bottom: -30px;
+            font-size: 25px;
         }
 
         #work {
@@ -68,54 +82,53 @@
         }
 
         .project-tile {
-            height: 300px;
+            height: 23em;
             display: flex;
             justify-content: center;
             margin-top: 50px;
-            /*padding-top: 70px;*/
-
         }
 
         .column {
-            /*text-align: center;*/
             width: 25%;
-            padding: 8px;
+            padding: 20px;
 
         }
 
         .card {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             padding: 5px;
-            font-size: 20px;
+            font-size: 23px;
             background-color: ghostwhite;
-
         }
+
         h5 {
             margin: 10px;
         }
+
         #contact {
             background-color: #BFD8D2;
         }
+
         h3 {
-            padding-top: 20px;
+            padding-top: 40px;
+            font-size: 20px;
         }
 
         .button {
             background-color: #DF744A;
-            font-family: 'Sofia';
+            font-family: 'Sofia', sans-serif;
             border: none;
-            /*color: white;*/
             padding: 20px;
             text-align: center;
-            /*text-decoration: none;*/
             display: inline-block;
-            font-size: 16px;
-            margin: 20px 5px;
+            font-size: 18px;
+            margin: 40px 15px;
+            border-radius: 12px;
 
         }
 
-        #button1, #button2, #button3, #button4 {
-            border-radius: 12px;
+        .button:hover {
+            color: #DCB239;
         }
 
         @media screen and (max-width: 600px) {
