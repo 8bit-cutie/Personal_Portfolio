@@ -3,18 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Portfolio</title>
+    <style>
+        h3 {
+            margin-bottom: -50px;
+        }
+        .images {
+            height: 50%;
+            width: 100%;
+        }
+
+        .project-tile {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            padding-top: 70px;
+
+        }
+
+        .column {
+            text-align: center;
+            width: 25%;
+            padding: 8px;
+            height: 100px;
+        }
+
+        .card {
+
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 5px;
+            background-color: ghostwhite;
+
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+        }
+
+        #button1, #button2, #button3, #button4 {
+            border-radius: 12px;
+        }
+
+    </style>
 </head>
 <body>
 <nav>
-    <a href="">About</a>
-    <a href="">Work</a>
-    <a href="">Contact</a>
+    <a href="#welcome-section">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
 </nav>
-<section id="welcome-section">
-<h1>Hi I am Nora Reguig</h1>
+<div id="welcome-section">
+    <h1>Hi I am Nora Reguig</h1>
     <p>I am a web developer and this is my portfolio!</p>
-</section>
+</div>
 <main>
+
+    <div id="work">
+    <h3>These are some of my projects</h3>
+    <div id="projects">
+
+        <div class="project-tile">
+            <div class="column">
+                <div class="card">
+                    <a href="https://codepen.io/8bit-cutie/full/xMjQBY" target="_blank">
+                        <img src="Tribute_page_Image.png" alt="Tribute Page screenshot" class="images">
+                        <h5>Tribute Page</h5>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card">
+                    <a href="https://codepen.io/8bit-cutie/full/JxeELP" target="_blank">
+                        <img src="Survey_Form_Image.png" alt="Survey Form Page screenshot" class="images">
+                        <h5>Survey Form</h5>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <div class="card">
+                    <a href="https://codepen.io/8bit-cutie/full/pGGedx" target="_blank">
+                        <img src="Product_Landing_Page_Image.png" alt="Product Landing Page screenshot" class="images">
+                        <h5>Product Landing Page</h5>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="project-tile">
+            <div class="column">
+                <div class="card">
+                    <a href="https://codepen.io/8bit-cutie/full/pGMjEq" target="_blank">
+                        <img src="Technical_Doc_Image.png" alt="Technical Page screenshot" class="images">
+                        <h5>Technical Documentation Page</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="contact">
+        <div>
+            <h4>I would love to work with you... Contact me below</h4>
+        </div>
+        <a href="https://github.com/8bit-cutie" target="_blank"><button class="button" id="button1">GitHub</button></a>
+        <a href="https://www.linkedin.com/in/nora-reguig" target="_blank"><button class="button" id="button2">LinkedIn</button></a>
+        <a href="mailto:sarareguig@gmail.com"><button class="button" id="button3">E-mail</button></a>
+        <a href="tel:+9178601047"><button class="button" id="button4">Call</button></a>
+
+    </div>
+
 
 </main>
 
