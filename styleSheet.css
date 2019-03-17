@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 
 
-
-
 html, body {
     font-family: 'Tangerine', serif;
     text-align: center;
@@ -131,14 +129,31 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+
+
+
+    nav {
+        width: 37.5rem;
+        text-align: left;
+        font-size: 30px;
+        padding-left: 4rem;
+    }
+    #welcome-section {
+        padding-top: 7rem;
+    }
+
     .project-tile {
-        display: flex;
-        justify-content: center;
+        display: block;
         height: 50%;
     }
     .card {
+
+        width: 22rem;
         margin-top: -10px;
         border-radius: 12px;
         text-align: center;
+    }
+    h5 {
+        font-size: 30px;
     }
 }
