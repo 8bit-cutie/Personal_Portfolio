@@ -1,151 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
+
     <title>Personal Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet'>
-    <style>
-
-        html, body {
-            font-family: 'Tangerine', serif;
-            text-align: center;
-            font-weight: 100;
-
-        }
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        nav {
-            width: 100%;
-            position: fixed;
-            background-color: floralwhite;
-            text-align: right;
-            padding: 13px;
-            font-size: 32px;
-        }
-
-        a {
-            color: black;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #DF744A;
-        }
-
-        .links {
-            padding: 20px;
-        }
-
-        #contact-link {
-            margin-right: 30px;
-        }
-
-        main {
-            padding-top: 40px;
-        }
-        h1 {
-
-            font-size: 53px;
-        }
-
-        #welcome-section {
-            padding-top: 10%;
-            padding-bottom: 10%;
-            color: black;
-            background-color: #FEDCD2;
-            font-size: 33px;
-        }
-
-        h2 {
-            padding-bottom: 20px;
-            margin-bottom: -30px;
-            font-size: 45px;
-            font-weight: lighter;
-        }
-
-        #work {
-            text-align: center;
-            padding-top: 40px;
-            /*background-color: #DCB239;*/
-            /*background-color: #BFD8D2;*/
-        }
-
-        .images {
-            height: 50%;
-            width: 100%;
-            border-radius: 12px;
-        }
-
-        .project-tile {
-            height: 23em;
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-        }
-
-        .column {
-            width: 25%;
-            padding: 20px;
-        }
-
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 5px;
-            background-color: ghostwhite;
-            border-radius: 12px;
-        }
-
-        h5 {
-            margin: 10px;
-            font-weight: lighter;
-            font-size: 40px;
-        }
-
-        #contact {
-            background-color: #D1EEEE;
-        }
-
-        h3 {
-            padding-top: 40px;
-            font-size: 43px;
-            font-weight: lighter;
-        }
-
-        .button {
-            background-color: #DF744A;
-            font-family: 'Tangerine', serif;
-            border: none;
-            padding: 20px;
-            text-align: center;
-            display: inline-block;
-            font-size: 33px;
-            margin: 40px 15px;
-            border-radius: 12px;
-            outline:none;
-
-        }
-
-        .button:hover {
-            color: #DCB239;
-        }
-
-        @media screen and (max-width: 600px) {
-            .project-tile {
-                display: flex;
-                justify-content: center;
-                height: 50%;
-            }
-            .card {
-                margin-top: -10px;
-                border-radius: 12px;
-                text-align: center;
-            }
-        }
-
-    </style>
 </head>
 <body>
 <div>
@@ -155,7 +17,7 @@
     <a href="#contact" class="links" id="contact-link">Contact</a>
 </nav>
 </div>
-<main>
+
 <div id="welcome-section">
     <h1>Hi I am Nora Reguig</h1>
     <p>I am a web developer and this is my portfolio!</p>
@@ -170,7 +32,7 @@
             <div class="column">
                 <div class="card">
                     <a href="https://8bit-cutie.github.io/Tribute_Page/" target="_blank">
-                        <img src="Tribute_page_Image.png" alt="Tribute Page screenshot" class="images">
+                        <img src="images/Tribute_page_Image.png" alt="Tribute Page screenshot" class="images">
                         <h5>Tribute Page</h5>
                     </a>
                 </div>
@@ -180,7 +42,7 @@
             <div class="column">
                 <div class="card">
                     <a href="https://8bit-cutie.github.io/SurveyForm/" target="_blank">
-                        <img src="Survey_Form_Image.png" alt="Survey Form Page screenshot" class="images">
+                        <img src="images/Survey_Form_Image.png" alt="Survey Form Page screenshot" class="images">
                         <h5>Survey Form</h5>
                     </a>
                 </div>
@@ -189,7 +51,7 @@
             <div class="column">
                 <div class="card">
                     <a href="https://8bit-cutie.github.io/Product_Landing_Page/" target="_blank">
-                        <img src="Product_Landing_Page_Image.png" alt="Product Landing Page screenshot" class="images">
+                        <img src="images/Product_Landing_Page_Image.png" alt="Product Landing Page screenshot" class="images">
                         <h5>Product Landing Page</h5>
                     </a>
                 </div>
@@ -201,7 +63,7 @@
             <div class="column">
                 <div class="card">
                     <a href="https://8bit-cutie.github.io/Technical_Documentation_Page/" target="_blank">
-                        <img src="Technical_Doc_Image.png" alt="Technical Page screenshot" class="images">
+                        <img src="images/Technical_Doc_Image.png" alt="Technical Page screenshot" class="images">
                         <h5>Technical Documentation Page</h5>
                     </a>
                 </div>
@@ -219,7 +81,9 @@
     </div>
 
 
-</main>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
