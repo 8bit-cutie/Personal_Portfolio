@@ -13,30 +13,18 @@ html, body {
 }
 
 nav {
-    width: 100%;
-    position: fixed;
     background-color: floralwhite;
-    text-align: right;
-    padding: 13px;
-    font-size: 32px;
-    z-index: 9;
+    font-size: 36px;
 }
 
 a {
+    padding-right: 30px;
     color: black;
-    text-decoration: none;
+    /*text-decoration: none;*/
 }
 
 a:hover {
     color: #DF744A;
-}
-
-.links {
-    padding: 20px;
-}
-
-#contact-link {
-    margin-right: 30px;
 }
 
 main {
@@ -44,12 +32,16 @@ main {
 }
 h1 {
 
-    font-size: 53px;
+    font-size: 73px;
+}
+
+p {
+    font-size: 40px;
 }
 
 #welcome-section {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 20%;
+    padding-bottom: 15%;
     color: black;
     background-color: #FEDCD2;
     font-size: 33px;
@@ -58,13 +50,13 @@ h1 {
 h2 {
     padding-bottom: 20px;
     margin-bottom: -30px;
-    font-size: 45px;
+    font-size: 60px;
     font-weight: lighter;
 }
 
 #work {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 50px;
     /*background-color: #DCB239;*/
     /*background-color: #BFD8D2;*/
 }
@@ -75,22 +67,17 @@ h2 {
     border-radius: 12px;
 }
 
-.project-tile {
-    height: 23em;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
+.box {
+    padding: 60px 0px;
+
 }
 
-.column {
-    width: 25%;
-    padding: 20px;
-}
-
-.card {
+.box-part {
+    /*padding:60px 10px;*/
+    margin: 30px 0px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 5px;
-    background-color: ghostwhite;
+    background-color: #FFFAFA;
     border-radius: 12px;
 }
 
@@ -131,13 +118,6 @@ h3 {
 @media screen and (max-width: 600px) {
 
 
-
-    nav {
-        width: 37.5rem;
-        text-align: left;
-        font-size: 30px;
-        padding-left: 4rem;
-    }
     #welcome-section {
         padding-top: 7rem;
     }
